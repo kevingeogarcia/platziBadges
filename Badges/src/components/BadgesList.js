@@ -11,7 +11,6 @@ class BadgesListItem extends React.Component {
           src={this.props.badge.avatarUrl}
           alt={`${this.props.badge.firstName} ${this.props.badge.lastName}`}
         />
-
         <div>
           <strong>
             {this.props.badge.firstName} {this.props.badge.lastName}
