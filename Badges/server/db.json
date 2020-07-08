@@ -442,13 +442,22 @@
       "id": "npaYZKI"
     },
     {
-      "firstName": "kevin ",
+      "firstName": "kevin",
       "lastName": "Hernandez",
       "email": "kevingeogarcia@gmail.com",
       "jobTitle": "Full Stack Development",
       "twitter": "kevingeogarcia",
-      "avatarUrl": "https://www.gravatar.com/avatar/70ab13d06f98d1996bb6cc2a7e44ff87?d=identicon",
+      "avatarUrl": "https://www.gravatar.com/avatar/394f3586ecd1f461e0736056ae197fc6?d=identicon",
       "id": "U6L5dxn"
+    },
+    {
+      "firstName": "Geovani",
+      "lastName": "Garcia",
+      "email": "kevingeogarcia@gmail.com",
+      "jobTitle": "Backend Development",
+      "twitter": "kevingeogarcia",
+      "avatarUrl": "https://www.gravatar.com/avatar/70ab13d06f98d1996bb6cc2a7e44ff87?d=identicon",
+      "id": "gAn-fa6"
     }
   ]
 }
