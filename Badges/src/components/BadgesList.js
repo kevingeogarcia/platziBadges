@@ -22,19 +22,25 @@ class BadgesListItem extends React.Component {
   }
 }
 
-function BadgesList(props) {
-  const badges = props.badges;
-  const [query, setQuery] = React.useState('');
+function useSearchBadges(badges) {
+  const [query, setQuery] = React.useState("");
   const [filterBadges, setfilterBadges] = React.useState(badges);
 
   React.useMemo(() => {
-    const result = badges.filter(badge => {
+    const result = badges.filter((badge) => {
       return `${badge.firstName} ${badge.lastName}`
         .toLowerCase()
         .includes(query.toLowerCase());
     });
     setfilterBadges(result);
   }, [badges, query]);
+
+  return { query, setQuery, filterBadges };
+}
+
+function BadgesList(props) {
+  const badges = props.badges;
+  const { query, setQuery, filterBadges } = useSearchBadges(badges);
   if (filterBadges.length === 0) {
     return (
       <div>
@@ -56,6 +62,7 @@ function BadgesList(props) {
       </div>
     );
   }
+
   return (
     <div className="BadgesList">
       <div className="form-group">
